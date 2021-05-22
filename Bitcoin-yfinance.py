@@ -26,7 +26,7 @@ col3.line_chart(tickerDf.Close)
 #######################################
 import matplotlib.pyplot as plt
     
-if st.button('Show Prediction'):
+if st.button('Show Next 10 days Prediction'):
     df=tickerDf[['Close']]    
 
     from tensorflow import keras
