@@ -64,6 +64,7 @@ if st.button('Show Next 10 days Prediction'):
     # Transforming the actual values to their original price
     actual = pd.DataFrame(scaler.inverse_transform(df[["Close"]].tail(pers)), index=df.Close.tail(pers).index, columns=df.columns).append(preds.head(1))
 
+    st.write(s)
     st.write("Below graph showing Actual of Last "+str(pers)+" Days and Forecasting of the next "+ str(n_per_out)+" days:")
 
 
