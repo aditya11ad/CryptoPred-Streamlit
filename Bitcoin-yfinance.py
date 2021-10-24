@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(layout='wide')
 st.title("Crypto Price Prediction by Aditya")
 col1 = st.sidebar
-col2, col3 = st.beta_columns((1,1))
+col2, col3 = st.columns((1,1))
 
 coin = col1.selectbox('Select coin', ('BTC', 'ETH','XRP','DOGE'))
 currency = col1.selectbox('Select currency', ('USD', 'INR'))
